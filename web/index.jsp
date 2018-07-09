@@ -13,6 +13,9 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Home</title>
+    <link rel="stylesheet" href="static/css/bootstrap.css">
+    <script src="static/js/jquery-3.3.1.min.js"></script>
+    <script src="static/js/bootstrap.js"></script>
 </head>
 <body>
 <div>
