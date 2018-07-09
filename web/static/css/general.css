@@ -1,0 +1,22 @@
+@font-face {
+    font-family: "Titillium Web";
+    src: url('../font/TitilliumWeb-Thin.woff.ttf');
+}
+
+div {
+    padding: 2em;
+    margin: 1em;
+}
+
+.Platinum {
+    font-family: "Titillium Web";
+    font-size: xx-small;
+    color: white;
+    background-color: #0F88EB;
+    border-radius: 0.2em;
+    padding: 0 0.35em 0 0.35em;
+}
+
+h1 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
