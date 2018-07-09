@@ -14,20 +14,22 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Home</title>
     <link rel="stylesheet" href="static/css/bootstrap.css">
+    <link rel="stylesheet" href="static/css/general.css">
     <script src="static/js/jquery-3.3.1.min.js"></script>
     <script src="static/js/bootstrap.js"></script>
 </head>
 <body>
 <div>
-    <h1>Welcome, This is the Home Page, </h1>
-    <p>
+    <h1>Welcome, This is the Home Page.</h1>
+    <h1>
         <c:if test="${ not empty userBean }">
-            Mx. ${ userBean.username }!
+            Mx. ${ userBean.username }<span class="Platinum">PLATINUM</span>!
         </c:if>
         <c:if test="${ empty userBean }">
-            Sign In Here!
+            <input type="button" onclick="location.href='login.jsp'" value="Sign In Here!"
+                   class="btn btn-primary"/>
         </c:if>
-    </p>
+    </h1>
 </div>
 </body>
 </html>
