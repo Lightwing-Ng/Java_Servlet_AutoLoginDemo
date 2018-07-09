@@ -20,16 +20,32 @@
 </head>
 <body>
 <div>
-    <h1>Welcome, This is the Home Page.</h1>
-    <h1>
-        <c:if test="${ not empty userBean }">
-            Mx. ${ userBean.username }<span class="Platinum">PLATINUM</span>!
-        </c:if>
-        <c:if test="${ empty userBean }">
-            <input type="button" onclick="location.href='login.jsp'" value="Sign In Here!"
-                   class="btn btn-primary"/>
-        </c:if>
-    </h1>
+
+    <table class="table">
+        <tr align="center">
+            <td rowspan="2">
+                <img src="static/img/The_University_of_California_UCLA.svg"
+                     width="100px">
+            </td>
+            <td>
+                <h1>Welcome, This is the Home Page.</h1>
+            </td>
+        </tr>
+        <tr align="center">
+            <td>
+                <h1>
+                    <c:if test="${ not empty userBean }">
+                        Mx. ${ userBean.username }<span class="Platinum">PLATINUM</span>!
+                    </c:if>
+                    <c:if test="${ empty userBean }">
+                        <input type="button" onclick="location.href='login.jsp'"
+                               value="Sign In Here!"
+                               class="btn btn-primary"/>
+                    </c:if>
+                </h1>
+            </td>
+        </tr>
+    </table>
 </div>
 </body>
 </html>
