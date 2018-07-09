@@ -13,13 +13,14 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Sign In</title>
     <link rel="stylesheet" href="static/css/bootstrap.css">
+    <link rel="stylesheet" href="static/css/general.css">
     <script src="static/js/jquery-3.3.1.min.js"></script>
     <script src="static/js/bootstrap.js"></script>
 </head>
 <body>
 <div>
     <form action="LoginServlet" method="post">
-        <table class="table">
+        <table class="table table-hover" width="50%">
             <tr>
                 <td>Username</td>
                 <td>
@@ -40,7 +41,7 @@
             </tr>
             <tr>
                 <td colspan="2">
-                    <input type="submit" value="Sign In">
+                    <input type="submit" value="Sign In" class="btn btn-primary btn-lg">
                 </td>
             </tr>
         </table>
